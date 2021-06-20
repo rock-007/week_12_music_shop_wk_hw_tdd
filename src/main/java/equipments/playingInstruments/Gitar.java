@@ -1,11 +1,14 @@
 package equipments.playingInstruments;
 
-public class Gitar {
+public class Gitar extends PlayingInstruments {
 
-    public InstrumentType type;
+    public String type;
     public String color;
 
-    public Gitar(InstrumentType type) {
+
+    public Gitar(String name, int buyingPrice, int sellingPrice, String type, String color) {
+        super(name, buyingPrice, sellingPrice, type, color);
         this.type = type;
+        this.color = color;
     }
 }
